@@ -1184,3 +1184,88 @@ footer i {
         grid-template-columns: 1fr;
     }
 }
+/* ========== DARK MODE ========== */
+:root {
+    --bg-light: #f8fafc;
+    --bg-dark: #0f172a;
+    --text-light: #334155;
+    --text-dark: #e2e8f0;
+    --card-light: #ffffff;
+    --card-dark: #1e293b;
+}
+
+body.dark-mode {
+    --light: var(--bg-dark);
+    --white: var(--card-dark);
+    --text: var(--text-dark);
+    --text-light: #cbd5e1;
+}
+
+body.dark-mode .navbar {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .service-card,
+body.dark-mode .skill-category,
+body.dark-mode .project-card,
+body.dark-mode .about {
+    background: var(--card-dark);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .service-card > p,
+body.dark-mode .about-text p,
+body.dark-mode .project-info p {
+    color: var(--text-dark);
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background: var(--card-dark);
+    color: var(--text-dark);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .contact-form input:focus,
+body.dark-mode .contact-form textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+}
+
+body.dark-mode .info-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .info-item strong,
+body.dark-mode .info-item p {
+    color: var(--text-dark);
+}
+
+body.dark-mode .modal {
+    background: rgba(15, 23, 42, 0.95);
+}
+
+body.dark-mode .modal-content {
+    background: var(--card-dark);
+}
+
+body.dark-mode .modal-right {
+    color: var(--text-dark);
+}
+
+body.dark-mode .modal-right h3 {
+    color: var(--white);
+}
+
+body.dark-mode footer {
+    background: #0a0f1a;
+}
+
+/* Transición suave entre temas */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
