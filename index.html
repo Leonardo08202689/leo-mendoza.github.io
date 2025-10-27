@@ -1,54 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Dark Mode Toggle -->
-<style>
-    .theme-toggle {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 60px;
-        height: 60px;
-        background: var(--gradient-1);
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        box-shadow: var(--shadow-lg);
-        transition: all 0.3s ease;
-        z-index: 100;
-    }
-    
-    .theme-toggle:hover {
-        transform: scale(1.1);
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
-    }
-    
-    @media (max-width: 768px) {
-        .theme-toggle {
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            font-size: 1.2rem;
-        }
-    }
-</style>
-  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonardo Mendoza Esquer | Estudiante de Ingenieria en Ciencias Ambintales y Licenciatura en Ciencias Computacionales</title>
+    <title>Leonardo Mendoza | Drones | Datos | Programación</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body>
     <!-- Navegación -->
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo"><i class="fas fa-code"></i> Leonardo Mendoza Esquer</h1>
+            <h1 class="logo"><i class="fas fa-code"></i> Leonardo Mendoza</h1>
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -70,17 +42,19 @@
         <div class="hero-content">
             <div class="hero-text">
                 <p class="hero-greeting">Hola, soy</p>
-                <h1 class="hero-name">Leonardo Mendoza Esquer</h1>
-                <h2 class="hero-title">Científico de Datos Geoespaciales & Especialista en Drones</h2>
-                <p class="hero-description">Transformo datos aéreos en insights accionables mediante Python, GIS y procesamiento avanzado de imágenes</p>
+                <h1 class="hero-name">Leonardo Mendoza</h1>
+                <h2 class="hero-title">Drones | Datos | Programación</h2>
+                <p class="hero-description">
+                    Trabajo con drones, procesamiento de imágenes y análisis de datos. Aquí encontrarás proyectos en los que he trabajado.
+                </p>
                 <div class="hero-buttons">
                     <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
                     <a href="#contacto" class="btn-secondary">Contactar</a>
                 </div>
                 <div class="social-links-hero">
-                    <a href="https://github.com/tuusuario" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/tuusuario" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:tucorreo@ejemplo.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Leonardo08202689" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/leonardo-mendoza" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:leo.men2689@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -92,23 +66,20 @@
             <h2>Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Soy un ingeniero ambiental especializado en <strong>ciencia de datos geoespaciales</strong>, con experiencia en operación de drones, procesamiento de imágenes y análisis espacial avanzado.</p>
+                    <p>Soy estudiante de <strong>Ingeniería en Ciencias Ambientales</strong> y <strong>Licenciatura en Ciencias de la Computación</strong>.</p>
                     
-                    <p>Mi enfoque combina <strong>drones</strong> con <strong>análisis computacional</strong> para resolver problemas complejos en agricultura de precisión, monitoreo ambiental y cartografía.</p>
-                    
-                    <p>Utilizo Python, herramientas GIS y técnicas de machine learning para extraer información valiosa de datos multiespectrales, nubes de puntos y modelos 3D.</p>
+                    <p>Tengo experiencia trabajando con drones, procesamiento de imágenes y análisis de datos. Estoy aprendiendo constantemente y me gusta resolver problemas reales.</p>
 
                     <div class="education">
                         <h3><i class="fas fa-graduation-cap"></i> Formación</h3>
                         <ul>
                             <li><strong>Ingeniería en Ciencias Ambientales</strong> - Universidad de Sonora</li>
-                            <li><strong>Licenciatura en Ciencias computacionales</strong> - Universidad Sonora</li>
-                            <li>Certificaciones en Procesamiento de Imágenes y GIS</li>
+                            <li><strong>Licenciatura en Ciencias de la Computación</strong> - Universidad de Sonora</li>
                         </ul>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images/perfil.jpg" alt="Tu Nombre">
+                    <img src="images/perfil.jpg" alt="Leonardo Mendoza">
                 </div>
             </div>
         </div>
@@ -130,11 +101,10 @@
                         <span class="tag">Python</span>
                         <span class="tag">NumPy</span>
                         <span class="tag">Pandas</span>
-                        <span class="tag">Matplotlib</span>
-                        <span class="tag">Scikit-learn</span>
                         <span class="tag">OpenCV</span>
-                        <span class="tag">Jupyter</span>
+                        <span class="tag">Scikit-learn</span>
                         <span class="tag">Git</span>
+                        <span class="tag">Jupyter</span>
                     </div>
                 </div>
 
@@ -146,11 +116,10 @@
                     </div>
                     <div class="skill-tags">
                         <span class="tag">QGIS</span>
-                        <span class="tag">ArcGIS</span>
                         <span class="tag">GDAL</span>
                         <span class="tag">Geopandas</span>
-                        <span class="tag">PostGIS</span>
                         <span class="tag">Google Earth Engine</span>
+                        <span class="tag">PostGIS</span>
                         <span class="tag">Análisis Raster</span>
                     </div>
                 </div>
@@ -163,12 +132,11 @@
                     </div>
                     <div class="skill-tags">
                         <span class="tag">Fotogrametría</span>
-                        <span class="tag">ODM</span>
+                        <span class="tag">Pix4D</span>
                         <span class="tag">Agisoft Metashape</span>
                         <span class="tag">CloudCompare</span>
-                        <span class="tag">Índices de Vegetación</span>
+                        <span class="tag">Índices NDVI</span>
                         <span class="tag">Imágenes Multiespectrales</span>
-                        <span class="tag">Nubes de Puntos</span>
                     </div>
                 </div>
 
@@ -180,7 +148,8 @@
                     </div>
                     <div class="skill-tags">
                         <span class="tag">Planificación de Vuelo</span>
-                        <span class="tag">DJI Phantom/Mavic</span>
+                        <span class="tag">DJI Phantom</span>
+                        <span class="tag">DJI Mavic</span>
                         <span class="tag">Sensores RGB</span>
                         <span class="tag">Sensores Multiespectrales</span>
                         <span class="tag">Cartografía Aérea</span>
@@ -196,10 +165,9 @@
                     <div class="skill-tags">
                         <span class="tag">Análisis Estadístico</span>
                         <span class="tag">Machine Learning</span>
-                        <span class="tag">Data Visualization</span>
                         <span class="tag">Series Temporales</span>
                         <span class="tag">Clasificación</span>
-                        <span class="tag">Regresión</span>
+                        <span class="tag">Visualización</span>
                     </div>
                 </div>
 
@@ -212,10 +180,9 @@
                     <div class="skill-tags">
                         <span class="tag">VSCode</span>
                         <span class="tag">GitHub</span>
-                        <span class="tag">Docker</span>
                         <span class="tag">Linux</span>
+                        <span class="tag">Docker</span>
                         <span class="tag">SQL</span>
-                        <span class="tag">LaTeX</span>
                     </div>
                 </div>
             </div>
@@ -225,15 +192,15 @@
     <!-- Servicios -->
     <section id="servicios" class="services">
         <div class="container">
-            <h2>Servicios Profesionales</h2>
+            <h2>Servicios</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-drone"></i>
-                    <h3>Adquisición de Datos Aéreos</h3>
-                    <p>Planificación y ejecución de vuelos con drones para captura de datos RGB y multiespectrales de alta precisión</p>
+                    <h3>Captura de Datos Aéreos</h3>
+                    <p>Levantamientos con drones, fotografía aérea, video 4K.</p>
                     <ul class="service-list">
-                        <li>Fotografía y video aéreo 4K</li>
-                        <li>Mapeo topográfico</li>
+                        <li>Fotografía y video aéreo</li>
+                        <li>Levantamientos topográficos</li>
                         <li>Imágenes multiespectrales</li>
                     </ul>
                 </div>
@@ -241,55 +208,55 @@
                 <div class="service-card">
                     <i class="fas fa-laptop-code"></i>
                     <h3>Procesamiento de Datos</h3>
-                    <p>Transformación de datos crudos en productos cartográficos y modelos 3D mediante fotogrametría avanzada</p>
+                    <p>Procesamiento de imágenes, generación de ortomosaicos y modelos 3D.</p>
                     <ul class="service-list">
-                        <li>Ortomosaicos georreferenciados</li>
-                        <li>Modelos digitales de elevación</li>
-                        <li>Nubes de puntos clasificadas</li>
+                        <li>Ortomosaicos</li>
+                        <li>Modelos 3D</li>
+                        <li>Nubes de puntos</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-seedling"></i>
                     <h3>Análisis Agrícola</h3>
-                    <p>Procesamiento de imágenes multiespectrales para agricultura de precisión y monitoreo de cultivos</p>
+                    <p>Análisis de imágenes multiespectrales para monitoreo de cultivos.</p>
                     <ul class="service-list">
-                        <li>Índices NDVI, GNDVI, NDRE</li>
-                        <li>Mapas de vigor vegetal</li>
-                        <li>Detección de estrés hídrico</li>
+                        <li>Índices de vegetación</li>
+                        <li>Análisis de cultivos</li>
+                        <li>Mapas temáticos</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-map"></i>
                     <h3>Análisis Geoespacial</h3>
-                    <p>Análisis espacial avanzado y geoprocesamiento con herramientas GIS y Python</p>
+                    <p>Análisis espacial con QGIS, Python y Google Earth Engine.</p>
                     <ul class="service-list">
-                        <li>Análisis de cambios temporales</li>
-                        <li>Modelado espacial</li>
-                        <li>Cartografía temática</li>
+                        <li>Análisis espacial</li>
+                        <li>Mapeo digital</li>
+                        <li>Cartografía</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-python"></i>
-                    <h3>Scripts y Automatización</h3>
-                    <p>Desarrollo de scripts en Python para automatizar flujos de trabajo de procesamiento de datos</p>
+                    <h3>Scripts en Python</h3>
+                    <p>Desarrollo de scripts para procesamiento y automatización.</p>
                     <ul class="service-list">
-                        <li>Procesamiento batch de imágenes</li>
-                        <li>Pipelines de análisis</li>
-                        <li>Herramientas personalizadas</li>
+                        <li>Procesamiento de imágenes</li>
+                        <li>Análisis de datos</li>
+                        <li>Automatización</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-file-alt"></i>
-                    <h3>Informes Técnicos</h3>
-                    <p>Generación de reportes técnicos detallados con análisis estadístico y visualizaciones profesionales</p>
+                    <h3>Reportes y Mapas</h3>
+                    <p>Generación de reportes técnicos y visualización de datos.</p>
                     <ul class="service-list">
-                        <li>Documentación técnica</li>
-                        <li>Visualizaciones de datos</li>
-                        <li>Informes ejecutivos</li>
+                        <li>Reportes técnicos</li>
+                        <li>Visualización de datos</li>
+                        <li>Mapas profesionales</li>
                     </ul>
                 </div>
             </div>
@@ -299,60 +266,55 @@
     <!-- Portafolio de Proyectos -->
     <section id="proyectos" class="portfolio">
         <div class="container">
-            <h2>Proyectos Destacados</h2>
+            <h2>Proyectos</h2>
             
             <!-- Filtros -->
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="drone">Drones</button>
-                <button class="filter-btn" data-filter="analisis">Análisis de Datos</button>
+                <button class="filter-btn" data-filter="analisis">Análisis</button>
                 <button class="filter-btn" data-filter="gis">GIS</button>
                 <button class="filter-btn" data-filter="python">Python</button>
             </div>
 
             <!-- Galería de Proyectos -->
             <div class="projects-grid">
-                <!-- Proyecto 1 -->
-                <div class="project-card" data-category="drone analisis">
+                <div class="project-card" data-category="python analisis">
                     <div class="project-image">
-                        <img src="images/proyecto1.jpg" alt="Análisis NDVI">
+                        <img src="images/proyecto1.jpg" alt="NDVI Analysis">
                         <div class="project-overlay">
                             <button class="view-details" onclick="openModal(0)">Ver Detalles</button>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Análisis Multiespectral para Agricultura</h3>
-                        <p>Pipeline completo en Python para procesamiento de imágenes multiespectrales y cálculo de índices de vegetación</p>
+                        <h3>Análisis NDVI de Cultivos</h3>
+                        <p>Procesamiento de imágenes multiespectrales para análisis de vegetación</p>
                         <div class="project-tags">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">NDVI</span>
                             <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Rasterio</span>
+                            <span class="tech-tag">NDVI</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyecto 2 -->
                 <div class="project-card" data-category="gis python">
                     <div class="project-image">
-                        <img src="images/proyecto2.jpg" alt="Análisis Temporal">
+                        <img src="images/proyecto2.jpg" alt="GEE Analysis">
                         <div class="project-overlay">
                             <button class="view-details" onclick="openModal(1)">Ver Detalles</button>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Análisis de Cambios Temporales con GEE</h3>
-                        <p>Script automatizado para detección de cambios en cobertura vegetal usando Google Earth Engine y Python</p>
+                        <h3>Análisis de Cambios con GEE</h3>
+                        <p>Detección de cambios en cobertura terrestre usando Google Earth Engine</p>
                         <div class="project-tags">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">GEE</span>
                             <span class="tech-tag">QGIS</span>
-                            <span class="tech-tag">Time Series</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyecto 3 -->
                 <div class="project-card" data-category="drone gis">
                     <div class="project-image">
                         <img src="images/proyecto3.jpg" alt="Ortomosaico">
@@ -361,65 +323,44 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Cartografía de Alta Precisión</h3>
-                        <p>Generación de ortomosaico de 50 hectáreas con resolución de 2cm/pixel para proyecto de construcción</p>
+                        <h3>Ortomosaico Topográfico</h3>
+                        <p>Levantamiento de 50 hectáreas con drone y procesamiento en Pix4D</p>
                         <div class="project-tags">
                             <span class="tech-tag">Pix4D</span>
-                            <span class="tech-tag">GIS</span>
+                            <span class="tech-tag">QGIS</span>
                             <span class="tech-tag">Fotogrametría</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyecto 4 -->
                 <div class="project-card" data-category="python analisis">
                     <div class="project-image">
-                        <img src="images/proyecto4.jpg" alt="Clasificación">
+                        <img src="images/proyecto4.jpg" alt="Batch Processing">
                         <div class="project-overlay">
                             <button class="view-details" onclick="openModal(3)">Ver Detalles</button>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Clasificación de Cobertura Terrestre</h3>
-                        <p>Modelo de machine learning para clasificación supervisada de imágenes satelitales usando scikit-learn</p>
+                        <h3>Procesamiento Batch de Imágenes</h3>
+                        <p>Script en Python para procesamiento automático de múltiples imágenes</p>
                         <div class="project-tags">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">GDAL</span>
+                            <span class="tech-tag">Automatización</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Proyecto 5 -->
                 <div class="project-card" data-category="drone python">
                     <div class="project-image">
-                        <img src="images/proyecto5.jpg" alt="Nubes de Puntos">
+                        <img src="images/proyecto5.jpg" alt="Dashboard">
                         <div class="project-overlay">
                             <button class="view-details" onclick="openModal(4)">Ver Detalles</button>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Procesamiento de Nubes de Puntos</h3>
-                        <p>Pipeline para procesamiento y análisis de nubes de puntos 3D con Python y CloudCompare</p>
-                        <div class="project-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">CloudCompare</span>
-                            <span class="tech-tag">3D Modeling</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 6 -->
-                <div class="project-card" data-category="gis analisis">
-                    <div class="project-image">
-                        <img src="images/proyecto6.jpg" alt="Dashboard">
-                        <div class="project-overlay">
-                            <button class="view-details" onclick="openModal(5)">Ver Detalles</button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Dashboard Interactivo de Monitoreo</h3>
-                        <p>Aplicación web para visualización de datos geoespaciales en tiempo real con mapas interactivos</p>
+                        <h3>Dashboard Agrícola</h3>
+                        <p>Aplicación web con Streamlit para visualización de datos agrícolas</p>
                         <div class="project-tags">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Streamlit</span>
@@ -427,107 +368,123 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card" data-category="gis analisis">
+                    <div class="project-image">
+                        <img src="images/proyecto6.jpg" alt="Clasificación">
+                        <div class="project-overlay">
+                            <button class="view-details" onclick="openModal(5)">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Clasificación de Cobertura</h3>
+                        <p>Modelo de machine learning para clasificar tipos de cobertura terrestre</p>
+                        <div class="project-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">ML</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
- <!-- Modal Actualizado -->
-<div id="modal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-        <div class="modal-left">
-            <img id="modal-img" src="images/proyecto1.jpg" alt="Proyecto">
-        </div>
-        <div class="modal-right">
-            <h3 id="modal-title"></h3>
-            <p id="modal-description"></p>
-            
-            <div class="modal-section">
-                <h4><i class="fas fa-bullseye"></i> Objetivo</h4>
-                <p id="modal-objective"></p>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <div class="modal-left">
+                <img id="modal-img" src="images/proyecto1.jpg" alt="Proyecto">
             </div>
+            <div class="modal-right">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Objetivo</h4>
+                    <p id="modal-objective"></p>
+                </div>
 
-            <div class="modal-section">
-                <h4><i class="fas fa-cogs"></i> Tecnologías Utilizadas</h4>
-                <div id="modal-tech"></div>
-            </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Tecnologías</h4>
+                    <div id="modal-tech"></div>
+                </div>
 
-            <div class="modal-section">
-                <h4><i class="fas fa-trophy"></i> Resultados Clave</h4>
-                <ul id="modal-results"></ul>
-            </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-trophy"></i> Resultados</h4>
+                    <ul id="modal-results"></ul>
+                </div>
 
-            <div class="modal-links">
-                <a id="modal-github" href="#" target="_blank" class="modal-btn">
-                    <i class="fab fa-github"></i> Ver Código
-                </a>
-                <a id="modal-demo" href="#" target="_blank" class="modal-btn">
-                    <i class="fas fa-external-link-alt"></i> Ver Demo
-                </a>
+                <div class="modal-links">
+                    <a id="modal-github" href="#" target="_blank" class="modal-btn">
+                        <i class="fab fa-github"></i> Ver Código
+                    </a>
+                    <a id="modal-demo" href="#" target="_blank" class="modal-btn">
+                        <i class="fas fa-external-link-alt"></i> Ver Demo
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Contacto -->
-  <!-- Contacto - ACTUALIZADO -->
-<section id="contacto" class="contact">
-    <div class="container">
-        <h2>Trabajemos Juntos</h2>
-        <p class="contact-intro">¿Tienes un proyecto en mente? Me encantaría escucharlo</p>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Información de Contacto</h3>
-                
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <strong>Email</strong>
-                        <p>tucorreo@ejemplo.com</p>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Trabajemos Juntos</h2>
+            <p class="contact-intro">¿Tienes un proyecto en mente? Me encantaría escucharlo</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>leo.men2689@gmail.com</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <strong>Teléfono</strong>
-                        <p>+52 123 456 7890</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <p>+52 123 456 7890</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <strong>Ubicación</strong>
-                        <p>Ciudad, México</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <p>Hermosillo, México</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <a href="https://github.com/Leonardo08202689" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/leonardo-mendoza" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:leo.men2689@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
 
-                <div class="social-links-contact">
-                    <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:tucorreo@ejemplo.com"><i class="fas fa-envelope"></i></a>
-                </div>
+                <!-- FORMULARIO CON FORMSPREE -->
+                <form class="contact-form" action="https://formspree.io/f/TU_FORM_ID" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu email" required>
+                    <input type="text" name="asunto" placeholder="Asunto" required>
+                    <textarea name="mensaje" rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
             </div>
-
-            <!-- FORMULARIO CON FORMSPREE -->
-            <form class="contact-form" action="https://formspree.io/f/TU_FORM_ID" method="POST">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu email" required>
-                <input type="text" name="asunto" placeholder="Asunto" required>
-                <textarea name="mensaje" rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
-                <button type="submit" class="btn-primary">Enviar Mensaje</button>
-            </form>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Leonardo Mendoza Esquer. </p>
+            <p>&copy; 2025 Leonardo Mendoza. Desarrollado con <i class="fas fa-heart"></i> y Python</p>
         </div>
     </footer>
 
