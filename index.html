@@ -1,5 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- Dark Mode Toggle -->
+<style>
+    .theme-toggle {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: var(--gradient-1);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        box-shadow: var(--shadow-lg);
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+    
+    .theme-toggle:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+    }
+    
+    @media (max-width: 768px) {
+        .theme-toggle {
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+        }
+    }
+</style>
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -433,56 +470,59 @@
 </div>
 
     <!-- Contacto -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>Trabajemos Juntos</h2>
-            <p class="contact-intro">¿Tienes un proyecto en mente? Me encantaría escucharlo</p>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>Email</strong>
-                            <p>tucorreo@ejemplo.com</p>
-                        </div>
+  <!-- Contacto - ACTUALIZADO -->
+<section id="contacto" class="contact">
+    <div class="container">
+        <h2>Trabajemos Juntos</h2>
+        <p class="contact-intro">¿Tienes un proyecto en mente? Me encantaría escucharlo</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p>tucorreo@ejemplo.com</p>
                     </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Teléfono</strong>
-                            <p>+52 00000000</p>
-                        </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Teléfono</strong>
+                        <p>+52 123 456 7890</p>
                     </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>Ubicación</strong>
-                            <p>Hermosillo, Sonora</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links-contact">
-                        <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:tucorreo@ejemplo.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Ubicación</strong>
+                        <p>Ciudad, México</p>
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
-                    <input type="text" name="nombre" placeholder="Tu nombre" required>
-                    <input type="email" name="email" placeholder="Tu email" required>
-                    <input type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea name="mensaje" rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
-                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
-                </form>
+                <div class="social-links-contact">
+                    <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:tucorreo@ejemplo.com"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
+
+            <!-- FORMULARIO CON FORMSPREE -->
+            <form class="contact-form" action="https://formspree.io/f/TU_FORM_ID" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <input type="text" name="asunto" placeholder="Asunto" required>
+                <textarea name="mensaje" rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer>
